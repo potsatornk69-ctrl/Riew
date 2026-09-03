@@ -1,0 +1,80 @@
+/* ตั้งค่าพื้นฐานของเว็บไซต์ */
+body {
+    background-color: #E3DDD8; /* สีพื้นหลัง */
+    color: #AD8F89; /* สีตัวอักษร */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* รูปแบบตัวอักษร Modern */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ตกแต่ง Profile Card */
+.card {
+    background-color: #ffffff; /* ให้การ์ดเป็นสีขาวเพื่อเน้นเนื้อหา */
+    width: 100%;
+    max-width: 400px; /* ไม่ให้เนื้อหาล้นหน้าจอ (Responsive) */
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #A37C5C; /* สีหลัก */
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #B08F74; /* สีรอง */
+}
+
+/* ส่วนรูป Profile */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+    object-fit: cover;
+    border: 4px solid #EDC1B2; /* มีขอบสีเดียวกับปุ่ม */
+    margin-bottom: 15px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #B08F74;
+}
+
+/* รายการงานอดิเรก */
+ul {
+    text-align: left;
+    display: inline-block; /* ทำให้ list อยู่ตรงกลางแต่ข้อความเรียงชิดซ้าย */
+    margin: 10px 0 25px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ตกแต่งปุ่ม */
+.button {
+    display: inline-block;
+    background-color: #EDC1B2; /* สีปุ่ม */
+    color: #ffffff; /* ข้อความบนปุ่มเป็นสีขาวให้อ่านง่าย */
+    text-decoration: none; /* เอาขีดเส้นใต้ออก */
+    padding: 12px 30px;
+    border-radius: 25px; /* ทำปุ่มขอบมน */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* เพิ่มความนุ่มนวลตอน Hover */
+}
+
+/* Hover Effect เมื่อเอาเมาส์วางบนปุ่ม */
+.button:hover {
+    background-color: #A37C5C; /* เปลี่ยนเป็นสีหลัก */
+    transform: scale(1.05); /* ขยายขนาดปุ่มเล็กน้อย */
+}
